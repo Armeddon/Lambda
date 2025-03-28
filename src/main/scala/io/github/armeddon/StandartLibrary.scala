@@ -55,16 +55,6 @@ object StandartLibrary {
       "false",
       Definition(List("a", "b"), Variable("b"))
     )
-    val yComb = {
-      val f = Definition(
-        "x",
-        Application(Variable("f"), Application(Variable("x"), Variable("x")))
-      )
-      Statement.BindingMulti(
-        "ycomb",
-        Application(f, f)
-      )
-    }
     val pred = Statement.BindingMulti(
       "pred",
       Definition(
